@@ -7,7 +7,7 @@ And that's why I created the
 
 - AVISynth 2.6.0 or higher
 - ffmpeg, build git-4160900 or higher
-- A videofile with two separate audio channels for voice and ingame sound
+- Videofile(s) with two separate audio channels for voice and ingame sound
 
 Tested with videos that are encoded with Lagarith Lossless or MagicYUV. Should work for any other codec as well.
 
@@ -17,6 +17,8 @@ Big shoutout to SagraS for his amazing AVISynth Tool! http://www.letsplayforum.d
 
 
 ## Installation
+
+Make sure that all requirements are met. 
 
 1. Download both files and copy them into your videocapture directory
 2. Execute the convertVideo.bat
@@ -56,3 +58,30 @@ Quick rundown of the ffmpeg parameters:
 - ```%%~nF``` return the name of a file without its extension. Again, why???
 - ```xcopy "%preset_path%" "%current_path%!avi_path!.avs*"``` Noticed the * in this command? You use it to tell the command line that this is indeed a file you want to copy and not a directory.
 - Oh and because some stack related reasons you have to use ```!``` instead of ```%``` to access the object inside a for each loop.
+
+## Bugs or missing features?
+
+I'm happy to help you if the script does not work for you. Post an issue or send me a message.
+
+## Licence
+The MIT License (MIT)
+
+Copyright (c) 2016 G710
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
